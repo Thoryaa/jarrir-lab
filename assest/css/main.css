@@ -154,11 +154,11 @@ header>.upper-header {
 
 .slider-container {
     background-color: #dddddd;
-    width: 90%!important;
-    height: 65% !important;
-    transform: translate(-5%, 5%);
+    width: 94%!important;
+    height: 80% !important;
+    transform: translate(-4%, 5%);
     border-radius: 5px;
-    padding: 20px;
+    padding: 26px;
     filter: drop-shadow(2px 1px 1px black);
 }
 
