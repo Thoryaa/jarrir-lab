@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+ :root {
+    --main: #4d6684;
+    --basic: #f9fafc;
+    --border: #eaedf4;
+    --basic2: #eff2f7;
+}
+
+.cart-collection-title {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #42526e;
+}
+
+.cart-collection-title span {
+    color: var(--main);
+}
+
+.cart-detail-book-name-container {
+    display: grid;
+    row-gap: 2px;
+    color: gray;
+}
+
+.father-cart-detail-book-name-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-detail-book-name {
+    display: flex;
+    gap: 5px;
+}
+
+.cart-detail-book-notice {
+    color: var(--main);
+    padding: 14px 22px;
+    height: 74px;
+    width: 70%;
+    background-color: beige;
+    border-right: 6px solid gold;
+}
+
+.cart-detail-book-notice>div {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.cart-detail-book-notice>div>h6 {
+    color: #000000a6;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.cart-detail-book-notice a {
+    text-decoration: none;
+    color: #3b9fcdd1;
+}
+
+
+/********/
+
+.oper-container {
+    display: flex;
+    align-items: center;
+}
+
+.num-container {}
+
+.oper-num {
+    display: grid;
+    align-items: center;
+}
