@@ -84,7 +84,7 @@ function indicator(num) {
     dots.forEach(function(dot) {
         dot.style.backgroundColor = "gray";
     });
-    document.querySelector(".dot-container button:nth-child(" + num + ")").style.backgroundColor = "blue";
+    document.querySelector(".btn-slid-container button:nth-child(" + num + ")").style.backgroundColor = "#f2f2f2";
 }
 
 function dot(index) {
