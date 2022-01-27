@@ -57,15 +57,3 @@ prevbtn.addEventListener("click", function() {
     });
 
 });
-let coun = 0;
-document.getElementById('request-done').addEventListener('click', addcook);
-/****************************************** */
-
-
-function addcook() {
-    coun = coun + 1;
-    sessionStorage.setItem('cart-count', coun);
-    document.getElementById('cart-coun').innerHTML = coun;
-    document.getElementById('cart-cou').innerHTML = coun;
-
-}

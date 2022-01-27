@@ -101,13 +101,28 @@ function openSignF() {
 }
 
 document.getElementById('add-to-cart').addEventListener('click', openwin);
+let coun = 0;
 
 function openwin() {
     window.open('../html/saling-form.html', '_self');
+    coun = coun + 1;
+    document.cookie.setItem('cart-count', coun);
+    sessionStorage.setItem('cart-count', coun);
+    document.getElementById('cart-coun').innerHTML = coun;
+    document.getElementById('cart-cou').innerHTML = coun;
 }
 //
 document.getElementById('cartt').addEventListener('click', opencart);
 
 function opencart() {
     window.open('../html/cart.html', '_blank');
+}
+document.getElementById('jarir-logo').style.cursor = 'pointer';
+document.getElementById('harir-logo').style.cursor = 'pointer';
+
+document.getElementById('harir-logo').addEventListener('click', home);
+document.getElementById('jarir-logo').addEventListener('click', home);
+
+function home() {
+    window.open('../../index.html', '_blank');
 }
