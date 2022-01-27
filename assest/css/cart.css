@@ -2,80 +2,462 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    direction: rtl;
 }
 
- :root {
+:root {
     --main: #4d6684;
     --basic: #f9fafc;
     --border: #eaedf4;
     --basic2: #eff2f7;
 }
 
-.cart-collection-title {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    color: #42526e;
+body {
+    direction: rtl;
 }
 
-.cart-collection-title span {
+.book-details {
+    display: grid;
+    row-gap: 30px;
+    margin-top: 5vh;
+    align-items: center;
+    padding: 12px 22px;
+}
+
+.sub-book-d ul {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+}
+
+.sub-book-d a {
+    text-decoration: none;
+    color: rgb(43, 43, 214);
+}
+
+.detail-part1 {
+    display: grid;
+}
+
+
+/****************************************/
+
+.cart-part2 {
+    padding: 14px 18px;
+    width: max(29vw, 370px);
+    height: 60vh;
+}
+
+.cart-part2-1>p {
+    color: var(--main);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.cart-part2-1>a {
+    color: blue;
+    font-size: 17px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cart-part2-1>span:active {
+    color: rgb(126, 126, 161);
+}
+
+.price-container {
+    display: grid;
+}
+
+.price-info {
+    color: red;
+    font-size: 20px;
+}
+
+.yer {
+    font-weight: 600;
+}
+
+.price-container>span {
+    color: #d5d6d9;
+    margin-right: 12px;
+    font-size: 13px;
+}
+
+
+/******** cart part 2 [2]*******88*/
+
+.cart-part2-2 {
+    direction: ltr;
+    color: #a4acb5;
+    display: grid;
+    row-gap: 6px;
+}
+
+.cart-part2-2>div {
+    display: flex;
+    gap: 5px;
+    color: #6d7dd5e0;
+    font-size: 13px;
+    align-items: center;
+}
+
+.product-info {
     color: var(--main);
 }
 
-.cart-detail-book-name-container {
-    display: grid;
-    row-gap: 2px;
-    color: gray;
+
+/***********************************************888*/
+
+.book-describe {
+    width: 100%;
+    padding: 23px 33px;
+    background-color: var(--basic2);
+    color: var(--main);
 }
 
-.father-cart-detail-book-name-container {
+
+/****************cart2-3************88*/
+
+.cart-part2-3 {
+    color: var(--main);
+    display: grid;
+    row-gap: 4px;
+}
+
+.cart-part2-3>div {
     display: flex;
     justify-content: space-between;
 }
 
-.cart-detail-book-name {
+
+/**************************cart2**********************************************/
+
+
+/**************************cart3**********************************************/
+
+.cart-part3 {
+    padding: 14px 18px;
+    width: max(32vw, 400px);
+    height: 60vh;
+    background-color: var(--basic);
+    filter: drop-shadow(2px 1px 2px black);
+    border-radius: 5px;
+    border: 1px solid var(--basic2);
+}
+
+.cart-part3>div {
+    display: grid;
+    row-gap: 16px;
+}
+
+.notice {
+    background-color: #f7f3d1b0;
+    padding: 12px;
+    border-radius: 3px;
+    border-right: 4px solid #ffeb3b;
+    color: var(--main);
+}
+
+.notice span {
+    font-weight: 900;
+}
+
+.notice a {
+    text-decoration: none;
+    color: blue;
+}
+
+.button-select-container {
     display: flex;
+    gap: 40px;
+}
+
+.button-select-container select {
+    width: 98px;
+    outline: none;
+    background: var(--basic2);
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+    height: 38px;
+    padding: 10px;
+    text-align: center;
+}
+
+.add-to-cart {
+    width: 64%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    filter: drop-shadow(1px 1px 2px black);
+    cursor: pointer;
+}
+
+.add-to-cart svg {
+    fill: white;
+}
+
+.add-to-cart:active {
+    background-color: var(--basic);
+    color: red;
+    fill: red;
+}
+
+.cart-info {
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--basic2);
+    row-gap: 14px;
+    height: 113px;
+    font-weight: 600;
+    color: var(--main);
+}
+
+.cart-info>div {
+    display: flex;
+    align-items: center;
     gap: 5px;
 }
 
-.cart-detail-book-notice {
+.buttonsContainer {
+    padding: 12px 0px;
+}
+
+hr {
+    border-color: var(--border);
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 3px;
+}
+
+.button>div {
+    width: 91px;
+    filter: drop-shadow(1px 1px 2px black);
+    padding: 8px;
+    background-color: white;
+    border-radius: 4px;
+    border: none;
     color: var(--main);
-    padding: 14px 22px;
-    height: 74px;
-    width: 70%;
-    background-color: beige;
-    border-right: 6px solid gold;
-}
-
-.cart-detail-book-notice>div {
+    font-weight: 600;
+    cursor: pointer;
     display: flex;
-    gap: 6px;
+    gap: 7px;
     align-items: center;
 }
 
-.cart-detail-book-notice>div>h6 {
-    color: #000000a6;
-    font-weight: bold;
-    font-size: 17px;
-}
-
-.cart-detail-book-notice a {
-    text-decoration: none;
-    color: #3b9fcdd1;
+.button>div:active {
+    color: var(--basic);
+    background-color: var(--main);
 }
 
 
-/********/
+/*********************************************************/
 
-.oper-container {
-    display: flex;
-    align-items: center;
+.detail2 {
+    padding: 0px 30px;
+    color: var(--main);
 }
 
-.num-container {}
-
-.oper-num {
+.detail-table>div {
     display: grid;
+    grid-template-columns: 1fr 7fr;
+    border-bottom: 1px solid var(--border);
+    padding: 9px;
+    color: var(--main);
+}
+
+.table {
+    font-weight: 700;
+}
+
+.show-more-few {
+    padding: 10px;
+    direction: ltr;
+    color: #3232ac;
+    cursor: pointer;
+}
+
+.show-more-few>span:active {
+    color: #7a4749;
+}
+
+
+/****************************************************88*/
+
+.reviews-container {
+    padding: 30px 33px;
+    display: grid;
+    row-gap: 13px;
+    border-bottom: 1px solid #849bb7;
+    border-top: 1px solid #849bb7;
+}
+
+.custom-review {
+    display: flex;
+    gap: 12px;
+    color: var(--main);
+    text-align: center;
+}
+
+.your-review {
+    width: 100px;
+    height: 27px;
+    border: none;
+    background-color: blue;
+    border-radius: 3px;
+    color: var(--basic);
+    padding: 6px;
+    cursor: pointer;
+    filter: drop-shadow(1px 0px 2px black);
+    outline: none;
+}
+
+.your-review:active {
+    background-color: var(--basic);
+    color: blue;
+}
+
+.custom {
+    background-color: var(--basic2);
+    border-radius: 3px;
+    padding: 12px;
+    border-top: 1px solid #4d668494;
+}
+
+.review-title {
+    color: var(--main);
+}
+
+.customer-info {
+    display: flex;
+    justify-content: space-between;
+    color: #4d6684bd;
+}
+
+.review-text {
+    padding: 10px 0px;
+}
+
+.show-reviews {
+    direction: ltr;
+    color: blue;
+    cursor: pointer;
+}
+
+.show-reviews:active {
+    color: rgb(67, 67, 78);
+}
+
+
+/**********/
+
+.few-style {
+    color: yellow;
+    content: "عرض اكثر";
+}
+
+.details-style {
+    display: none;
+}
+
+.simlar {
+    color: var(--main);
+    font-size: 20px;
+    padding: 12px 1px;
+    border-top: 1px solid var(--border);
+}
+
+.simlar>div {
+    display: flex;
     align-items: center;
+}
+
+.simlar-collection {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cart-sm {
+    height: 276px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    width: 187px;
+}
+
+.cart-sm img {
+    height: 100px;
+}
+
+.cart-sm .book-title {
+    color: var(--main);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.ar-but {
+    filter: drop-shadow(1px 1px 1px gray);
+    background-color: white;
+    border-radius: 50%;
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.ar-but:active {
+    background-color: gray;
+}
+
+.book-price {
+    font-size: 18px;
+}
+
+.cart-sm3,
+.cart-sm4,
+.cart-sm5,
+.cart-sm6 {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .cart-sm3 {
+        display: grid;
+    }
+}
+
+
+/**/
+
+@media (min-width: 768px) {
+    .detail-part1 {
+        display: flex;
+        padding: 12px 33px;
+    }
+    .cart-sm4 {
+        display: grid;
+    }
+}
+
+@media (min-width: 992px) {
+    .cart-sm5,
+    .cart-sm6 {
+        display: grid;
+    }
 }

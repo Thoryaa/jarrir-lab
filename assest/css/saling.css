@@ -1,0 +1,197 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+     :root {
+        --gray: #ccc;
+        --active: rgb(221, 92, 92);
+        --main: #4d6684;
+        --basic: #f9fafc;
+        --border: #eaedf4;
+        --basic2: #eff2f7;
+    }
+    
+    body {
+        direction: rtl;
+        background-image: linear-gradient( 45deg, #e0e0e0, #eeeeee, transparent);
+    }
+    
+    .body-of-request {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .request-form {
+        display: grid;
+        row-gap: 12px;
+        width: 80%;
+        height: 96%;
+        filter: drop-shadow(2px 4px 6px black);
+        background-color: white;
+        border: 1px solid aliceblue;
+        border-radius: 8px;
+    }
+    
+    .progress-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 2vh;
+        position: relative;
+        z-index: -2;
+        height: 10vh;
+    }
+    
+    .circle {
+        border: 5px double var(--active);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        align-items: center;
+        color: var(--default);
+    }
+    
+    .progress {
+        display: flex;
+        width: 80%;
+        position: absolute;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .progress::before {
+        content: '';
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        z-index: -1;
+        background-color: #ccc;
+        height: 2px;
+    }
+    
+    .progress-line {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        background-color: var(--active);
+        width: 0%;
+        height: 2px;
+        z-index: -1;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .container-btn {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20vh;
+        position: relative;
+    }
+    
+    .btn {
+        width: 110px;
+        height: 39px;
+        border-radius: 5px;
+        color: white;
+        font-size: 18px;
+        border: none;
+        background-color: var(--active);
+        cursor: pointer;
+    }
+    
+    .btn:active {
+        color: var(--active);
+        background-color: white;
+    }
+    
+    .active {
+        border: var(--active);
+        background-color: var(--active);
+        color: white;
+    }
+    
+    .active-form {
+        display: block !important;
+    }
+    
+    .client-form {
+        text-align: center;
+    }
+    
+    .client-form-parts form,
+    #part2 form {
+        width: 100%;
+        display: grid;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        color: black;
+        line-height: 40px;
+    }
+    
+    .client-form-parts form input,
+    #part2 form input {
+        margin: auto;
+        width: 61%;
+        padding: 12px;
+        border: none;
+        outline: none;
+        background-color: var(--active);
+        margin: 5px 1px;
+        text-transform: capitalize;
+        text-align: center;
+        border-radius: 4px;
+        color: white;
+    }
+    
+    .client-form-parts {
+        display: none;
+    }
+    
+    #part3 {
+        color: rgb(6, 36, 53);
+        margin: 2rem;
+        font-size: 1.3rem;
+    }
+    
+    .pay-way {
+        display: flex;
+        align-items: center;
+    }
+    
+    #part3 input {}
+    
+    .request-info {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        font-size: 14px;
+    }
+    
+    .request-done {
+        border: none;
+        background-color: var(--active);
+        width: 10rem;
+        height: 4rem;
+        border-radius: 8px;
+        color: white;
+        font-size: 16px;
+        margin: auto;
+        cursor: pointer;
+    }
+    
+    #part4 form {
+        font-size: 2rem;
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }

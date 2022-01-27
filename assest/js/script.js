@@ -99,3 +99,15 @@ function dot(index) {
 function openSignF() {
     signForm.classList.toggle('sign-form-active');
 }
+
+document.getElementById('add-to-cart').addEventListener('click', openwin);
+
+function openwin() {
+    window.open('../html/saling-form.html', '_self');
+}
+//
+document.getElementById('cartt').addEventListener('click', opencart);
+
+function opencart() {
+    window.open('../html/cart.html', '_blank');
+}
