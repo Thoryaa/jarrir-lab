@@ -126,3 +126,6 @@ document.getElementById('jarir-logo').addEventListener('click', home);
 function home() {
     window.open('../../index.html', '_blank');
 }
+document.querySelector('.current-book .kind-c>div a ').addEventListener('click', () => {
+    window.open('../html/cat.html');
+});
